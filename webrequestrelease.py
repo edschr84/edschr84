@@ -33,6 +33,7 @@ def distro_release_version():
         package_list()
         packages = ["fedora-release-" + release_ver, "fedora-repos-" + release_ver, "fedora-gpg-keys"]
 
+
 def package_list():
     global packages, url, package_path_list
     page = requests.get(url).text
@@ -49,6 +50,7 @@ def package_list():
                 print(full_url, end="")
                 print("---\/-## Fetched ##")
 
+
 if __name__ == "__main__":
 
     print("Which Distribution image would you like to create?: 1 - CentOS; 2 - Fedora; 3 - Debian")
@@ -57,3 +59,4 @@ if __name__ == "__main__":
     print("The following packages were downloaded:")
     for package in package_path_list:
         print(package)
+
