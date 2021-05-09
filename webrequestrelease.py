@@ -52,7 +52,6 @@ def package_list():
 
 
 if __name__ == "__main__":
-
     print("Which Distribution image would you like to create?: 1 - CentOS; 2 - Fedora; 3 - Debian")
     distro = input("#!#")
     distro_release_version()
