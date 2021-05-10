@@ -10,7 +10,7 @@ if not os.path.exists(build_dir):
 distro = ""
 release_ver = ""
 url = ""
-packages = ""
+packages = []
 package_path_list = []
 
 def distro_release_version():
@@ -47,8 +47,6 @@ def package_list():
                 request = requests.get(full_url)
                 package_path_list.append(package_path)
                 open(package_path, 'wb').write(request.content)
-                print(full_url, end="")
-                print("    ## Fetched ##")
 
 
 if __name__ == "__main__":
