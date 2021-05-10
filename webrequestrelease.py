@@ -48,7 +48,7 @@ def package_list():
                 package_path_list.append(package_path)
                 open(package_path, 'wb').write(request.content)
                 print(full_url, end="")
-                print("---\/-## Fetched ##")
+                print("    ## Fetched ##")
 
 
 if __name__ == "__main__":
