@@ -30,8 +30,8 @@ def distro_release_version():
         print('Which release of Fedora?:')
         release_ver = input('#1#')
         url = 'http://mirror.bytemark.co.uk/fedora/linux/releases/' + release_ver + '/Everything/x86_64/os/Packages/f/'
-        package_list()
         packages = ["fedora-release-" + release_ver, "fedora-repos-" + release_ver, "fedora-gpg-keys"]
+        package_list()
 
 
 def package_list():
