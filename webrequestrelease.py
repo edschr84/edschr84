@@ -27,7 +27,7 @@ def distro_release_version():
             packages = ["centos-release"]
             package_list()
     if distro == "2":
-        print('Which release of Fedora?:')
+        print('Fedora, 32 33 or 34?')
         release_ver = input('#1#')
         url = 'http://mirror.bytemark.co.uk/fedora/linux/releases/' + release_ver + '/Everything/x86_64/os/Packages/f/'
         packages = ["fedora-release-" + release_ver, "fedora-repos-" + release_ver, "fedora-gpg-keys"]
